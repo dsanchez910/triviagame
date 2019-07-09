@@ -50,3 +50,13 @@ var messages = {
     finished: "Results"
 }
 
+$('#startBtn').on('click', function(){
+	$(this).hide();
+	newGame();
+});
+
+$('#startOverBtn').on('click', function(){
+	$(this).hide();
+	newGame();
+});
+
