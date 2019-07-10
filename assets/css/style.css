@@ -1,0 +1,14 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: black;
+    background: rgb(147, 210, 229);
+    text-align: center;
+  }
+  
+  .container{
+	margin-top: 50px;
+	text-align: center;
+	height: 100%;
+	width: 700px;
+}
