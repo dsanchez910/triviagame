@@ -7,8 +7,10 @@ body {
   }
   
   .container{
-	margin-top: 50px;
-	text-align: center;
+	margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 	height: 100%;
 	width: 700px;
 }
