@@ -111,3 +111,34 @@ function showCountdown(){
 		answerPage();
 	}
 }
+
+function answerPage(){
+	$('#currentQuestion').empty();
+	$('.thisChoice').empty();
+	$('.question').empty();
+
+	var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
+	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
+	
+	
+	if((userSelect == rightAnswerIndex) && (answered == true)){
+		correctAnswer++;
+		$('#message').html(messages.correct);
+	} else if((userSelect != rightAnswerIndex) && (answered == true)){
+		incorrectAnswer++;
+		$('#message').html(messages.incorrect);
+		$('#correctedAnswer').html('The correct answer is: ' + rightAnswerText);
+	} else{
+		unanswered++;
+		$('#message').html(messages.endTime);
+		$('#correctedAnswer').html('The correct answer is: ' + rightAnswerText);
+		answered = true;
+	}
+	
+	if(currentQuestion == (triviaQuestions.length-1)){
+		setTimeout(scoreboard, 5000)
+	} else{
+		currentQuestion++;
+		setTimeout(newQuestion, 5000);
+	}	
+}
