@@ -39,3 +39,22 @@ const triviaQuestions = [{
 	answerList: ["15", "9", "20", "32"],
 	answer: 0
 },];
+
+let questionArray = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8', 'question9', 'question10'];
+let currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var seconds; var time; var answered; var userSelect;
+let messages = {
+	correct: "Correct",
+	incorrect: "Incorrect",
+	endTime: "Out of time",
+    finished: "Results"
+}
+
+$('#startBtn').on('click', function(){
+	$(this).hide();
+	newGame();
+});
+
+$('#startOverBtn').on('click', function(){
+	$(this).hide();
+	newGame();
+});
