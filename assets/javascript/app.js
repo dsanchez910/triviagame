@@ -21,7 +21,7 @@ const triviaQuestions = [{
 },{
 	question: "What Team is the Yankees biggest Rival?",
 	answerList: ["Dodgers", "Mets", "Red Sox", "Rays"],
-	answer: 3
+	answer: 2
 },{
 	question: "Who was the last Yankees pitcher to win World Series MVP?",
 	answerList: ["CC Sabathia", "Rodger Clemmons", "Mariano Rivera", "David Cone"],
@@ -76,7 +76,7 @@ function newQuestion(){
 	$('#correctedAnswer').empty();
 	answered = true;
 
-	$('#currentQuestion').html('Question #'+(currentQuestion+1)+'/'+triviaQuestions.length);
+	$('#currentQuestion').html('Question '+(currentQuestion+1)+'/'+triviaQuestions.length);
 	$('.question').html('<h2>' + triviaQuestions[currentQuestion].question + '</h2>');
 	for(var i = 0; i < 4; i++){
 		var choices = $('<div>');

@@ -1,16 +1,15 @@
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Muli', sans-serif;  
     font-size: 30px;
-    color: black;
-    background: rgb(147, 210, 229);
+    color: rgb(61, 35, 134);
+    background: white;
     text-align: center;
   }
   
-  .container{
+  .container {
 	margin-top: 100px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 	height: 100%;
 	width: 700px;
 }
+
